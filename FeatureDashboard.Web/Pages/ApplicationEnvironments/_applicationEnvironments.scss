@@ -1,0 +1,10 @@
+.test {
+  h1 {
+    color: orange;
+  }
+
+  color: $secondary-color;
+  display: flex;
+  width: calc(90vw - 10%);
+  background-color: $primary-color;
+}

@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "FeatureDashboard.Web",
+    "module": "commonjs",
+    "declaration": false,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "target": "es2015",
+    "lib": [
+      "dom",
+      "es2015"
+    ]
+  },
+  "compileOnSave": true,
+  "include": ["FeatureDashboard.Web/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts", "FeatureDashboard.Web/wwwroot"]
+}

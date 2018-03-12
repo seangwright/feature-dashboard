@@ -1,0 +1,38 @@
+{
+  "name": "feature-dashboard.web",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "7.0.0-beta.40",
+    "@babel/preset-env": "7.0.0-beta.40",
+    "@types/jquery": "3.3.1",
+    "autoprefixer": "8.1.0",
+    "babel-loader": "8.0.0-beta.0",
+    "clean-webpack-plugin": "0.1.19",
+    "css-loader": "0.28.10",
+    "cssnano": "3.10.0",
+    "extract-text-webpack-plugin": "4.0.0-alpha.0",
+    "glob": "7.1.2",
+    "node-sass": "4.8.1",
+    "postcss": "6.0.19",
+    "postcss-loader": "2.1.1",
+    "sass-loader": "6.0.7",
+    "style-loader": "0.20.3",
+    "ts-loader": "4.0.1",
+    "typescript": "2.7.2",
+    "uglifyjs-webpack-plugin": "1.2.3",
+    "webpack": "4.1.1",
+    "webpack-cli": "2.0.11"
+  },
+  "dependencies": {
+    "@babel/polyfill": "7.0.0-beta.40",
+    "@fortawesome/fontawesome": "1.1.4",
+    "@fortawesome/fontawesome-pro-regular": "5.0.8",
+    "jquery": "3.3.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.prod.config.js",
+    "start": "webpack --config webpack.dev.config.js"
+  },
+  "browserslist": "last 2 versions, ie 11"
+}

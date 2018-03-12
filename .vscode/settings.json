@@ -1,0 +1,22 @@
+{
+  "editor.minimap.enabled": false,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "node_modules": true
+    },
+    "prettier.singleQuote": true,
+    "[scss]": {
+      "editor.formatOnSave": true
+    },
+    "[html]": {
+      "editor.formatOnSave": true
+    },
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+      "editor.formatOnSave": true
+    }
+  }
+  
