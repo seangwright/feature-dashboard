@@ -1,0 +1,52 @@
+﻿@page
+@model Applications.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Application</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Application.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Application.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Application.Url)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Application.Url)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Application.DateCreated)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Application.DateCreated)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Application.DateModified)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Application.DateModified)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Application.ApplicationEnvironment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Application.ApplicationEnvironment.Id)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Application.Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-page="./Index">Back to List</a>
+    </form>
+</div>

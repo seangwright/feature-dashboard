@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Applications";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<a asp-page="./Create">Create</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Applications[0].Id)</th>
+            <th>@Html.DisplayNameFor(model => model.Applications[0].Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Applications[0].Url)</th>
+            <th>@Html.DisplayNameFor(model => model.Applications[0].ApplicationEnvironment)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var application in Model.Applications)
+        {
+            <tr>
+                <td>@application.Id</td>
+                <td>@application.Name</td>
+                <td>@application.Url</td>
+                <td>@application.ApplicationEnvironment.Name</td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@application.Id">Edit</a> |
+                    <a asp-page="./Delete" asp-route-id="@application.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

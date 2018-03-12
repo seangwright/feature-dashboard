@@ -1,0 +1,10 @@
+﻿@model IEnumerable<RouteInformation>
+
+<ul class="nav navbar-nav">
+    @foreach (var route in Model)
+    {
+        <li>
+            <a href="@route.Path">@route.Name</a>
+        </li>
+    }
+</ul>
