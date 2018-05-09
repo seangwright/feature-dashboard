@@ -5,7 +5,7 @@
 
 	https://blogs.msdn.microsoft.com/webdev/2018/02/27/asp-net-core-2-1-0-preview1-now-available/
 
-* Running on `2.1.0-preview1-final` of ASP.NET Core
+* Running on `2.1.0-rc1-final` of ASP.NET Core
 
 * Uses localdb connection for database
 	
